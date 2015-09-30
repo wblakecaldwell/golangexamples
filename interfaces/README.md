@@ -2,8 +2,8 @@ Interfaces in Go
 ================
 
 In this example, you end up with a session manager and a database manager
-that need to use each other, but Go doesn't allow cyclic package dependencies
-- that is, package "a" can't import package "b" if package "b" imports 
+that need to use each other, but Go doesn't allow cyclic package dependencies - 
+that is, package "a" can't import package "b" if package "b" imports 
 package "a". Go does have interfaces, and what's interesting about them is
 that they're implicit. That means that you can interface out a third-party
 structure without modifying its package. Just define an interface in your
